@@ -1,3 +1,60 @@
+import React, { createContext, useState, ReactNode } from "react";
+import { Item } from "./types";
+
+export interface ItemsContextType {
+  items: Item[];
+  setItems: React.Dispatch<React.SetStateAction<Item[]>>;
+}
+
+export const ItemsContext = createContext<ItemsContextType | undefined>(undefined);
+
+export function ItemsProvider({ children }: { children: ReactNode }) {
+  const [items, setItems] = useState<Item[]>([]);
+  return (
+    <ItemsContext.Provider value={{ items, setItems }}>
+      {children}
+    </ItemsContext.Provider>
+  );
+}
+import React, { createContext, useState, ReactNode } from "react";
+import { Item } from "./types";
+
+export interface ItemsContextType {
+  items: Item[];
+  setItems: React.Dispatch<React.SetStateAction<Item[]>>;
+}
+
+export const ItemsContext = createContext<ItemsContextType | undefined>(undefined);
+
+export function ItemsProvider({ children }: { children: ReactNode }) {
+  const [items, setItems] = useState<Item[]>([]);
+  return (
+    <ItemsContext.Provider value={{ items, setItems }}>
+      {children}
+    </ItemsContext.Provider>
+  );
+}
+You said:
+how you say it shows empty
+You said:
+tell me what should i add ?
+You said:
+useEffect(() => {
+    if (id) {
+      fetchItemDetail(Number(id))
+        .then(setItem)
+        .catch(() => setItem(null));
+    }
+  }, [id]);
+
+  // Update prev/next whenever item or items change
+  useEffect(() => {
+    if (!item || items.length === 0) {
+      setPrevItem(null);
+      setNextItem(null);
+      return;
+    }
+You said:
 import React, { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ItemsContext, ItemsContextType } from "../ItemsContext";
@@ -89,3 +146,7 @@ You said:
 does it involve network speed
 You said:
 what did you do ? if i reload, it just shows loading
+You said:
+do nothing. just what should i do next
+
+https://chatgpt.com/share/68e5e73d-0a60-800c-aa34-0645e48330b6
