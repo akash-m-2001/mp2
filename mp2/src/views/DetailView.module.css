@@ -1,0 +1,91 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.card {
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.name {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.topSection {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.basicInfo {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.basicInfo p {
+  margin: 0.2rem 0;
+}
+
+.statsSection {
+  margin-bottom: 0.8rem;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.statsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+}
+
+.statsGrid span {
+  background: #f2f2f2;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navButtons button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.navButtons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loadingText {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+}

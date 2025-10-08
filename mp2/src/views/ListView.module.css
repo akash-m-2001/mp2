@@ -1,0 +1,78 @@
+.listContainer {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.sortControls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.sortButton {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.itemList {
+  list-style: none;
+  padding: 0;
+}
+
+.itemRow {
+  margin-bottom: 1rem;
+}
+
+.itemLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.itemLink:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: #f9f9f9;
+}
+
+.itemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.itemText {
+  flex-grow: 1;
+}
+
+.itemInfo {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
